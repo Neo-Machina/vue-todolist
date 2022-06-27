@@ -18,19 +18,19 @@
         </div>
 
         <div class="todos-container">
-            <ul class="todos-list">
+            <ul v-if="todos.length > 0" class="todos-list">
                 <!-- Template base todo -->
-                <li v-for="singleTodo in todos" class="todo" :class="{ 'line-through' : singleTodo.done }">
+                <li v-for="(singleTodo, index) in todos" class="todo" :class="{ 'line-through' : singleTodo.done }">
                     {{ singleTodo.text }}
                     <div class="actions">
-                        <span>
+                        <span @click="removeTodo(index)">
                             <i class="fa fa-times" aria-hidden="true"></i>
                         </span>
                     </div>
                 </li>
             </ul>
 
-            <!-- <p v-else>Non hai cose da fare oggi, ma puoi sempre aggiungerne ;)</p> -->
+            <p v-else>Non hai cose da fare oggi, ma puoi sempre aggiungerne ;)</p>
         </div>
     </div>
     <script type="text/javascript" src="js/script.js"></script>
