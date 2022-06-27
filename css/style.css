@@ -46,3 +46,6 @@
 .todos-list .todo .actions span {
     cursor: pointer;
 }
+.line-through {
+    text-decoration: line-through;
+}

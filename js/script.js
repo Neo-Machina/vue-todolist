@@ -22,7 +22,7 @@ var app = new Vue(
                 },
                 {
                     text: 'Fare la spesa',
-                    done: false
+                    done: true
                 },
                 {
                     text: 'Fare il bucato',

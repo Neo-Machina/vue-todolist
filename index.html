@@ -20,8 +20,8 @@
         <div class="todos-container">
             <ul class="todos-list">
                 <!-- Template base todo -->
-                <li class="todo">
-                    <!-- {{ singleTodo }} -->
+                <li v-for="singleTodo in todos" class="todo" :class="{ 'line-through' : singleTodo.done }">
+                    {{ singleTodo.text }}
                     <div class="actions">
                         <span>
                             <i class="fa fa-times" aria-hidden="true"></i>
