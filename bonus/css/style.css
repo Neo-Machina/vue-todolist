@@ -46,6 +46,9 @@
 .todos-list .todo:hover {
     background: white;
 }
+.text-item {
+    cursor: pointer;
+}
 .todos-list .todo .actions span {
     cursor: pointer;
 }
