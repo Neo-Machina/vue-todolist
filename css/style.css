@@ -43,8 +43,14 @@
     display: flex;
     justify-content: space-between;
 }
+.todos-list .todo:hover {
+    background: white;
+}
 .todos-list .todo .actions span {
     cursor: pointer;
+}
+.todos-list .todo .actions span:hover {
+    color: red;
 }
 .line-through {
     text-decoration: line-through;
