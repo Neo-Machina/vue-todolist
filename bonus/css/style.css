@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* COMMON */
+body {
+    font-family: sans-serif;
+}
 
 /* Inputs area */
 .inputs {
@@ -11,18 +15,18 @@
     text-align: center;
 }
 .inputs input {
-    padding: 17px 17px;
-    font-size: 20px;
+    padding: 8px 20px;
+    font-size: 15px;
     border-radius: 10px;
     border: 1px solid black;
-    width: 400px;
+    width: 320px;
 }
 .inputs button {
-    padding: 17px 17px;
-    font-size: 20px;
+    padding: 8px 20px;
+    font-size: 15px;
     border-radius: 10px;
     border: 1px solid black;
-    margin-left: 20px;
+    margin-left: 10px;
     cursor: pointer;
 }
 
@@ -31,15 +35,16 @@
     width: 70%;
     margin: auto;
     background-color: #F5F7F7;
-    padding: 25px;
+    padding: 30px;
+    border-radius: 15px;
 }
 .todos-list {
     list-style-type: none;
 }
 .todos-list .todo {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid #e3e6e9;
     padding: 10px;
-    font-size: 20px;
+    font-size: 16px;
     display: flex;
     justify-content: space-between;
 }
