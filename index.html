@@ -12,7 +12,26 @@
 </head>
 <body>
     <div id="root">
+        <div class="inputs">
+            <input type="text" placeholder="Nuovo Todo">
+            <button>Aggiungi</button>
+        </div>
 
+        <div class="todos-container">
+            <ul class="todos-list">
+                <!-- Template base todo -->
+                <li class="todo">
+                    <!-- {{ singleTodo }} -->
+                    <div class="actions">
+                        <span>
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- <p v-else>Non hai cose da fare oggi, ma puoi sempre aggiungerne ;)</p> -->
+        </div>
     </div>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
