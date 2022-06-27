@@ -13,7 +13,7 @@
 <body>
     <div id="root">
         <div class="inputs">
-            <input v-model="newTodo" type="text" placeholder="Nuovo Todo">
+            <input v-model="newTodo" @keyup.enter="addNewTodo()" type="text" placeholder="Nuovo Todo">
             <button @click="addNewTodo()">Aggiungi</button>
         </div>
 
